@@ -7,16 +7,16 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <Router> {/*create navbar element*/}
       <div>
-      <NavigationBar />
+      <NavigationBar /> {/*create navbar element*/}
       <Routes>
         <Route path="/content" element={<Content />} />
         <Route path="/header" element={<Header />} />
-        <Route path="/footer" element={<Footer />} />
-      </Routes>
+        <Route path="/footer" element={<Footer />} /> {/*display different content depending on navbar button clicked*/}
+      </Routes> 
       </div>
-    </Router>
+    </Router> 
   );
 }
 
